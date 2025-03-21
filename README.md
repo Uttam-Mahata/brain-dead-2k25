@@ -1,5 +1,3 @@
-
-
 # **Problem Statement 2: Research Article Summarization Using Advanced NLP Techniques**  
 #### <div align="right">🎯 Marks: 60</div> 
 
@@ -148,7 +146,93 @@ Models will be evaluated on:
 
 ---
 
+## Research Article Summarization Implementation
 
+This repository contains the implementation of an extractive-abstractive hybrid model for summarizing research articles. The following files are included:
+
+- `summarizer.py`: Main implementation of the research article summarizer using transformers
+- `hybrid_summarizer.py`: Implementation of a hybrid extractive-abstractive approach
+- `model_comparison.py`: Script to compare different summarization models
+- `run_experiments.py`: Script to run experiments and generate comparison reports
+- `requirements.txt`: Dependencies needed to run the code
+
+### Installation
+
+To install the required dependencies, run:
+
+```bash
+pip install -r requirements.txt
+```
+
+### Basic Usage
+
+To run the basic summarizer:
+
+```bash
+python summarizer.py
+```
+
+To compare different models:
+
+```bash
+python model_comparison.py
+```
+
+To run the hybrid summarizer:
+
+```bash
+python hybrid_summarizer.py
+```
+
+To run experiments and generate reports:
+
+```bash
+python run_experiments.py --dataset /path/to/dataset.csv --name experiment_name --samples 50
+```
+
+### Models Implemented
+
+1. **Abstractive Models**:
+   - PEGASUS (google/pegasus-cnn_dailymail)
+   - BART (facebook/bart-large-cnn)
+   - T5 (t5-small)
+
+2. **Extractive Methods**:
+   - TextRank
+   - K-Means Clustering
+   - BERT Embeddings
+
+3. **Hybrid Approaches**:
+   - TextRank + PEGASUS
+   - K-Means + PEGASUS
+   - BERT Embeddings + PEGASUS
+
+### Evaluation Metrics
+
+The models are evaluated using the following metrics:
+
+- ROUGE-1, ROUGE-2, ROUGE-L scores
+- BLEU score
+
+### Results
+
+Experiments comparing different models and approaches can be found in the `experiments` directory. Each experiment includes:
+
+- CSV file with performance metrics
+- Visualization of the results
+- JSON files with detailed metrics and best-performing models
+
+### Citation
+
+If you use this code in your research, please cite our work:
+
+```
+@article{brain-dead-2k25,
+  title={Research Article Summarization Using Advanced NLP Techniques},
+  author={Brain Dead 2K25 Team},
+  year={2023}
+}
+```
 
 ### **Problem Statement 2:**  
 - U.S. National Library of Medicine *(PubMed Dataset)*
