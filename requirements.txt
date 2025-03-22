@@ -15,3 +15,4 @@ tqdm>=4.62.0
 torchvision==0.18.0
 sentencepiece>=0.1.95  # Added for PegasusTokenizer
 protobuf>=3.0.0  # Required for sentencepiece
+kagglehub>=0.2.0  # Added for downloading the arXiv dataset
